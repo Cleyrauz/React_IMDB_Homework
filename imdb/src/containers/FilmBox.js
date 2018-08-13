@@ -7,7 +7,7 @@ class FilmBox extends Component{
       this.state = {
         data: [{
           id: 1,
-          title: 'The Shawshank Redemption',
+          title: 'The Shawshank',
           imdbLink: "https://www.imdb.com/title/tt0111161/"
         },
         {
@@ -40,12 +40,15 @@ class FilmBox extends Component{
 
     render(){
     return(
-      <div className="film box">
-      <h2>Film List</h2>
+      <div className="film-box">
+      <h2>UK Opening This Week</h2>
       <FilmList data={this.state.data}/>
+      <h4><a href="https://www.cineworld.co.uk/" target="_blank">
+      See more opening this week
+    </a></h4>
       <div className="all-cinemas">
       <h3><a href="https://www.cineworld.co.uk/" target="_blank">
-        Get Cinemas
+        Get Showtimes >>
       </a></h3>
     </div>
   </div>
